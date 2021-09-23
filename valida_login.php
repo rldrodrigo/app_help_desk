@@ -2,12 +2,6 @@
 
 session_start();
 
-$_SESSION['x'] = 'Olá turo pom?';
-print_r($_SESSION['x']);
-
-echo  $_SESSION['y'];
-
-
 //variavel que verifica se autenticacao foi realizada
 $usuario_autenticado = false;
 
