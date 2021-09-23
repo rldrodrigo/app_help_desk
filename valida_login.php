@@ -1,5 +1,13 @@
 <?php
 
+session_start();
+
+$_SESSION['x'] = 'Olá turo pom?';
+print_r($_SESSION['x']);
+
+echo  $_SESSION['y'];
+
+
 //variavel que verifica se autenticacao foi realizada
 $usuario_autenticado = false;
 
@@ -10,10 +18,10 @@ $usuarios_app = array(
 );
 
 /*
-echo '<pre>';
-print_r($usuarios_app);
-echo '</pre>';
-*/
+    echo '<pre>';
+    print_r($usuarios_app);
+    echo '</pre>';
+    */
 
 
 foreach ($usuarios_app as $user) {
@@ -27,6 +35,8 @@ foreach ($usuarios_app as $user) {
 
 if ($usuario_autenticado) {
     echo 'Usuário Autenticado';
+    $_SESSION['autenticado'] = 'SIM';
 } else {
+    $_SESSION['autenticado'] = 'NAO';
     header('Location: index.php?login=erro');
 }
