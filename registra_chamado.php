@@ -10,7 +10,8 @@ $texto = $_SESSION['id'] . '#' . $titulo . '#' . $categoria . '#' . $descricao .
 //implode('#', $_POST);
 
 //Abrindo o arquivo
-$arquivo = fopen('arquivo.hd', 'a');
+$arquivo = fopen('pasta-nao-publica/arquivo.hd', 'a');
+//$arquivo = fopen('../../app_help_desk/arquivo.hd', 'a');
 
 //Escrevendo no arquivo
 fwrite($arquivo, $texto);

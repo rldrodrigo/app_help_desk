@@ -5,10 +5,8 @@
 //chamados
 $chamados = array();
 
-echo $_SESSION['perfil_id'];
-
 //abrir o arquivo.hd
-$arquivo = fopen('arquivo.hd', 'r');
+$arquivo = fopen('pasta-nao-publica/arquivo.hd', 'r');
 
 //enquanto houver registros (linhas) a serem recuperados
 while (!feof($arquivo)) { //testa pelo fim de um arquivo
