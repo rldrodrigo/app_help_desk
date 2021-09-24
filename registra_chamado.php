@@ -9,7 +9,7 @@ $texto = $titulo . '#' . $categoria . '#' . $descricao . PHP_EOL;
 //implode('#', $_POST);
 
 //Abrindo o arquivo
-$arquivo = fopen('arquivo.txt', 'a');
+$arquivo = fopen('arquivo.hd', 'a');
 
 //Escrevendo no arquivo
 fwrite($arquivo, $texto);
